@@ -534,7 +534,7 @@ section {
   }
 
   .mobile-nav-show {
-    color: var(--color-secondary);
+    color: #eee;
     font-size: 28px;
     cursor: pointer;
     line-height: 0;
@@ -544,7 +544,7 @@ section {
   }
 
   .mobile-nav-hide {
-    color: var(--color-secondary);
+    color: #eee;
     font-size: 32px;
     cursor: pointer;
     line-height: 0;
