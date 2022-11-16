@@ -1529,7 +1529,7 @@ section {
   position: relative;
   min-height: 80vh;
   max-height: 80vh;
-  padding: 00px 60px 0px 60px;
+  padding: 00px 00px 0px 00px;
   background-color: var(--color-default);
 }
 .main-hero__logo {
@@ -1562,9 +1562,18 @@ section {
   background-position: center;
 } 
 
-@media (max-width: 640px) {
-
+@media (max-width: 992px) {
+  .main-hero {
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    min-height: 80vh;
+    max-height: 80vh;
+    padding: 00px 00px 0px 00px;
+    background-color: var(--color-default);
+  }
 }
+
 
 /*--------------------------------------------------------------
 # hero
