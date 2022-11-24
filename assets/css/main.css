@@ -10,6 +10,7 @@
   --color-default: #212529;
   --color-primary: #ce1212;
   --color-secondary: #37373f;
+  --color-white: #fff;
 }
 
 /* Smooth scroll behavior */
@@ -20,6 +21,13 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+* {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -o-user-select: none;
+  user-select: none;
+}
 body {
   font-family: var(--font-default);
   color: var(--color-default);
@@ -846,6 +854,11 @@ section {
 /*--------------------------------------------------------------
 # Menu Section
 --------------------------------------------------------------*/
+.menu {
+  
+  padding: 00px 60px 0px 60px;
+  background-color: var(--color-default);
+}
 .menu .nav-tabs {
   border: 0;
 }
@@ -854,7 +867,7 @@ section {
   margin: 0 10px;
   padding: 10px 5px;
   transition: 0.3s;
-  color: var(--color-secondary);
+  color: var(--color-white);
   border-radius: 0;
   cursor: pointer;
   height: 100%;
@@ -892,8 +905,9 @@ section {
 }
 
 .menu .nav-link.active {
-  color: var(--color-primary);
-  border-color: var(--color-primary);
+   color: var(--color-primary); 
+   border-color: var(--color-primary); 
+   background-color: var(--color-default);
 }
 
 .menu .tab-content .tab-header {
@@ -1377,8 +1391,14 @@ section {
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
+.contact {
+  
+  padding: 00px 60px 0px 60px;
+  background-color: var(--color-default);
+}
+
 .contact .info-item {
-  background: #f4f4f4;
+  background: var(--color-secondary);
   padding: 30px;
   height: 100%;
 }
@@ -1399,7 +1419,7 @@ section {
 
 .contact .info-item h3 {
   font-size: 20px;
-  color: #6c757d;
+  color: var(--color-white);
   font-weight: 700;
   margin: 0 0 5px 0;
 }
@@ -1409,12 +1429,22 @@ section {
   margin: 0;
   line-height: 24px;
   font-size: 14px;
+  color: var(--color-white);
+  -webkit-user-select: all;  /* Chrome all / Safari all */
+  -moz-user-select: all;     /* Firefox all */
+  -ms-user-select: all;      /* IE 10+ */
+  user-select: all;     
+
+}
+
+.contact .info-item {
+  color: var(--color-white);
 }
 
 .contact .info-item .social-links a {
   font-size: 24px;
   display: inline-block;
-  color: rgba(55, 55, 63, 0.7);
+  color: var(--color-white);
   line-height: 1;
   margin: 4px 6px 0 0;
   transition: 0.3s;
@@ -1529,7 +1559,7 @@ section {
   position: relative;
   min-height: 80vh;
   max-height: 80vh;
-  padding: 00px 00px 0px 00px;
+  padding: 00px 60px 0px 60px;
   background-color: var(--color-default);
 }
 .main-hero__logo {
